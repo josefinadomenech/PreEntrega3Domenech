@@ -6,30 +6,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>La Cruz Pampa - Cuchillos</title>
+
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <title>La Cruz Pampa - Niño</title>
+    <meta name="description" content="Camisas, clazado y sweaters para niños de excelente calidad.">
+    <meta name="keywords" content="Mates, Lagomarsino, Camisas, Castelar, Regalos, Platería, Alpargatas, Cuero">
 </head>
 <body>
 
     
     <header>
-<!--logo-->
-        <div class="logo">
-            <img src="../img/logo.svg" alt="">
-            <h1>La Cruz Pampa</h1>
-            <h2>Artículos de talabartería</h2>
-        </div>
-<!--menu-->
-        <nav>
-            <ul>
-                <li><a href="#">talabartería</a></li>
-                <li><a href="#">indumentaria</a></li>
-                <li><a href="#">contacto</a></li>
-            </ul>
-        </nav>
+        
+        <nav class="nav-pags navbar navbar-expand-md">
+            <!-- Brand -->
+            <a class="logo-pags navbar-brand" href="../index.html">
+                <img src="../img/logo.svg" alt="Logo">
+                <h1>La Cruz Pampa</h1>
+            </a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown"><a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">talabartería</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./mates.html">Mates</a>
+                        <a class="dropdown-item" href="./sombreros.html">Sombreros</a>
+                        <a class="dropdown-item" href="./cuchillos.html">Cuchillos</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">indumentaria</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./hombre.html">Hombre</a>
+                        <a class="dropdown-item" href="./mujer.html">Mujer</a>
+                        <a class="dropdown-item" href="#">Niño</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./contacto.html">contacto</a></li>
+              </ul>
+            </div>
+          </nav>
+
     </header>
 
     <main>
+        <ul class="opciones nav justify-content-center">
+            <li class="nav-item"><a class="nav-link active" href="#camisas">Camisas</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#sweaters">Sweaters</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pantalones">Pantalones</a></li>
+            <li class="nav-item"><a class="nav-link" href="#calzado">Calzado</a></li>
+        </ul>
 
+        <!--secciones-->
+    <div class="posts container-fluid">
+
+        <!--camisas-->  
+            <h2 class="seccion-name" id="camisas">Camisas</h2>
+                <div class="row">
+                    <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                        <div class="panel-body">
+                        <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                        <h3>Nombre prenda</h3>
+                        <p>Talle, color, etc.</p>
+                        <p class="font-weight-bold">Precio<p>
+                        </div>
+                    </div>
+    
+                    <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                        <div class="panel-body">
+                        <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                        <h3>Nombre prenda</h3>
+                        <p>Talle, color, etc.</p>
+                        <p class="font-weight-bold">Precio<p>
+                        </div>
+                    </div>
+    
+                    <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                        <div class="panel-body">
+                        <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                        <h3>Nombre prenda</h3>
+                        <p>Talle, color, etc.</p>
+                        <p class="font-weight-bold">Precio<p>
+                        </div>
+                    </div>
+    
+                    <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                        <div class="panel-body">
+                        <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                        <h3>Nombre prenda</h3>
+                        <p>Talle, color, etc.</p>
+                        <p class="font-weight-bold">Precio<p>
+                        </div>
+                    </div>
+                        
+                </div>
+        
+        <!--sweaters--> 
+            <h2 class="seccion-name" id="sweaters">Sweaters</h2>
+                <div class="row">
+                        <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="panel-body">
+                            <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                            <h3>Nombre prenda</h3>
+                            <p>Talle, color, etc.</p>
+                            <p class="font-weight-bold">Precio<p>
+                            </div>
+                        </div>
+        
+                        <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="panel-body">
+                            <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                            <h3>Nombre prenda</h3>
+                            <p>Talle, color, etc.</p>
+                            <p class="font-weight-bold">Precio<p>
+                            </div>
+                        </div>
+        
+                        <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="panel-body">
+                            <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                            <h3>Nombre prenda</h3>
+                            <p>Talle, color, etc.</p>
+                            <p class="font-weight-bold">Precio<p>
+                            </div>
+                        </div>
+        
+                        <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="panel-body">
+                            <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                            <h3>Nombre prenda</h3>
+                            <p>Talle, color, etc.</p>
+                            <p class="font-weight-bold">Precio<p>
+                            </div>
+                        </div>
+        
+                </div>
+        
+        <!--pantalones--> 
+            <h2 class="seccion-name" id="pantalones">Pantalones</h2>
+                <div class="row">
+                        <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="panel-body">
+                            <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                            <h3>Nombre prenda</h3>
+                            <p>Talle, color, etc.</p>
+                            <p class="font-weight-bold">Precio<p>
+                            </div>
+                        </div>
+        
+                        <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="panel-body">
+                            <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                            <h3>Nombre prenda</h3>
+                            <p>Talle, color, etc.</p>
+                            <p class="font-weight-bold">Precio<p>
+                            </div>
+                        </div>
+        
+                        <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="panel-body">
+                            <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                            <h3>Nombre prenda</h3>
+                            <p>Talle, color, etc.</p>
+                            <p class="font-weight-bold">Precio<p>
+                            </div>
+                        </div>
+        
+                        <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="panel-body">
+                            <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                            <h3>Nombre prenda</h3>
+                            <p>Talle, color, etc.</p>
+                            <p class="font-weight-bold">Precio<p>
+                            </div>
+                        </div>
+                </div>
+        
+        <!--calzado-->
+            <h2 class="seccion-name font-weight-bold" id="calzado">Calzado</h2> 
+                <div class="row">
+        
+                        <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="panel-body">
+                            <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                            <h3>Nombre prenda</h3>
+                            <p>Talle, color, etc.</p>
+                            <p class="font-weight-bold">Precio<p>
+                            </div>
+                        </div>
+        
+                        <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="panel-body">
+                            <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                            <h3>Nombre prenda</h3>
+                            <p>Talle, color, etc.</p>
+                            <p class="font-weight-bold">Precio<p>
+                            </div>
+                        </div>
+        
+                        <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="panel-body">
+                            <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                            <h3>Nombre prenda</h3>
+                            <p>Talle, color, etc.</p>
+                            <p class="font-weight-bold">Precio<p>
+                            </div>
+                        </div>
+        
+                        <div class="panel panel-default col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="panel-body">
+                            <img class="img-fluid" src="../img/ejemplo.svg" alt="">
+                            <h3>Nombre prenda</h3>
+                            <p>Talle, color, etc.</p>
+                            <p class="font-weight-bold">Precio<p>
+                            </div>
+                        </div>
+        
+                </div>
+                </div> 
     </main>
 
     <footer class="page-footer">
@@ -46,19 +244,19 @@
         <div class="info container-fluid text-center text-md-left">
             <div class="row">
         
-                <div class="col-md-6 mt-md-0 mt-3">
+                <div class="informacion col-md-6 mt-md-0 mt-3">
                     <h3>Cómo comprar</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nostrum? Maiores quaerat officia velit, laboriosam deleniti eaque facilis unde asperiores repellat iusto. Dolorem rerum consequuntur fuga architecto iste, magni beatae?</p>
+                    <p>Esta página funciona únicamente a modo de catálogo. La venta de los productos aquí presentes se realizará vía los distintos medios de comunicación dispuestos donde serán atendidos y asesorados tanto sobre los preoductos como los medios de pago. En caso de tener dudas, escribir a alguno de los medios dispuestos o completar la ficha de contacto y nos contactaremos con usted. </p>
                 </div>
-        
-                <div class="col-md-6 mt-md-0 mt-3">
+
+                <div class="informacion col-md-6 mt-md-0 mt-3">
                     <h3>Políticas de devolución</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eius modi ut distinctio. Facilis qui maxime minus soluta, eveniet porro ratione nam doloribus voluptate temporibus? Expedita deserunt placeat ipsa quaerat.</p>
+                    <p>Una vez que se haya recibido el producto, el mismo no podrá ser devuelto al vendedor. Aseguramos un adecuado asesoramiento a fin de evitar posibles errores en su compra que podrían ser motivo de la devolución de la misma.</p>
                 </div>
-        
-                <div class="col-md-6 mt-md-0 mt-3">
+
+                <div class="informacion col-md-6 mt-md-0 mt-3">
                     <h3>Envíos</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus architecto earum repudiandae aut a maxime rerum ratione sunt neque assumenda distinctio, non atque, voluptas reiciendis quidem ut eligendi ex. Natus?</p>
+                    <p>Se realizan envíos a todo el país (Argentina). La empresa encargada del envío será acordada con el cliente al momento de la compra. Todas las compras mayores a x monto serán abonadas por el vendedor.</p>
                 </div>
         
             </div>
