@@ -1,0 +1,151 @@
+@import "./partials/variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    nav{
+       font-family: $secondary_font;
+       font-size: 2.5vh;
+       text-transform: capitalize;
+       margin: 1rem;
+
+       li{
+        a{
+            color: black;
+           }
+        a:hover{
+            color: gray;
+           }
+       }
+    }
+    .logo{
+        font-family: $main_font;
+        margin: auto;
+        width: 30%;
+        justify-items: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 40vh 7vh 7vh;
+        grid-template-areas: 
+            "logo logo"
+            "nombre nombre"
+            "lema lema" ;
+        
+        img{
+            grid-area: logo;
+            max-width: 100%;
+            object-fit: cover;
+        }
+        
+        h1{
+            grid-area: nombre;
+            font-weight: bold;
+            font-size: 6vh;
+        }
+
+        h2{
+            grid-area: lema;
+            text-transform: capitalize;
+            font-size: 3vh;
+        }
+    }
+}
+
+/*menu paginas*/
+    nav.nav-pags{
+        margin: 0;
+        width: 100%;
+
+        img{
+            width: 20vh;
+        }
+        h1{
+            font-size: 3vh;
+            color: black;
+            font-weight: bold;
+        }
+    }
+
+
+
+main{
+    .marcas{
+        width: 50%;
+        height: 30vh;
+        margin: auto;
+        padding: 3rem;
+    
+        img{
+            max-width: 30%;
+            object-fit: contain;
+            padding: 1rem;
+        }
+    }
+
+    .posts{
+        .panel{
+            padding: 1rem;
+            .panel-body{
+                border: 0.05rem solid #2f2f2f;
+                border-radius: 0.5rem;
+                padding: 0.8rem;
+
+                .img{
+                    max-width: 100%;
+                    height: 40vh;
+                    background-image: url(../img/camisas/1.jpg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+
+                img{
+                    width: 100%;
+                    height: 40vh;
+                    object-fit: contain;
+                    border-radius: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+footer{
+    background-color: $footer_color;
+    color: white;
+    font-family: $footer_font;
+
+    .redes{
+        font-size: 6vh;
+        padding: 1rem;
+
+        a{
+            color: white;
+            margin: 2rem;
+        }
+        a:hover{
+            color: gray;
+        }
+    }
+
+    .info{
+
+        .informacion{
+            padding: 1.5rem;
+        }
+
+        h3{
+            font-size: 3vh;
+        }
+
+        p{
+            font-size: 2vh;
+        }
+    }   
+}
